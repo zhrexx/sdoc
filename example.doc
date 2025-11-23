@@ -1,0 +1,22 @@
+struct User {
+    author: zhrexx;
+    since: "0.0.1";
+    desc: "User account data";
+    string name : "User's full name";
+    int age : "User's age";
+}
+
+fn getUser {
+    since: "1.0";
+    tags: "main_api";
+    desc: "Fetches user by ID";
+    int id : "User identifier";
+    returns: User;
+}
+
+enum Role {
+    version: "1.0.0"; 
+    desc: "User access levels";
+    ADMIN : "Administrator" = 1;
+    USER : "Regular user" = 0;
+}
